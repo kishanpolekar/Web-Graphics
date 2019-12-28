@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<style>
+		strong, em {
+			background-color: red;
+			}
+		body {
+			background-image: url("ex-8_images/water-bg.gif");
+			background-size: cover; /*auto contain cover width height*/
+			background-attachment: fixed; /*attachment: scroll fixed*/
+			background-color: blue; /* bg color-name */
+			color: white; /* text color-name */
+			}
+		#example1 {
+			width: 300px;
+			height: 300px;
+			background-color: cyan; /* bg color-name */
+			background-image: url("ex-8_images/water-sunset.png");
+			}
+		#ex2 {
+			width: 200px;
+			height: 200px;
+			background-image: url("ex-8_images/cage.png");
+			}
+		#ex3 {
+			width: 200px;
+			height: 200px;
+			background-image: url("ex-8_images/bird.jpg");
+			}
+		#ex4 {
+			width: 200px;
+			height: 200px;
+			background-image: url("ex-8_images/cage.png"), url("ex-8_images/bird.jpg");
+			}
+		#ex5 {
+			width: 90px;
+			height: 312px;
+			background-image: url("ex-8_images/psmurf.jpg");
+			background-position: center;/* left right top bottom center */
+			}
+		#ex5b {
+			width: 90px;
+			height: 312px;
+			background-image: url("ex-8_images/psmurf.jpg");
+			background-position: right -50px;
+			}
+		#ex5c {
+			width: 90px;
+			height: 312px;
+			background-image: url("ex-8_images/psmurf.jpg");
+			background-position: left;
+			}
+		#ex6 {
+			width: 300px;
+			height: 300px;
+			background-image: url("ex-8_images/chicken-egg.jpg");
+			/* repeat no-repeat repeat-x repeat-y */
+			border: 1px solid black; /* border shorthand: width style color */
+			}
+		#ex7 {
+			width: 300px;
+			height: 300px;
+			background-image: url("ex-8_images/fence.jpg");
+			background-repeat: repeat-x;/* repeat no-repeat repeat-x repeat-y */
+			border: 1px solid black; /* border shorthand: width style color */
+			}
+		#ex8 {
+			width: 300px;
+			height: 300px;
+			background-image: url("ex-8_images/turtle.jpg");
+			background-repeat: repeat-y;/* repeat no-repeat repeat-x repeat-y */
+			border: 1px solid black; /* border shorthand: width style color */
+			}
+		#ex9 {
+			width: 400px;
+			height: 400px;
+			background-image: url("ex-8_images/stretch-sm.gif");
+			background-repeat: no-repeat;
+			border: 1px solid orange;
+			background-size: 400px 400px; /*auto contain cover width height*/
+			}
+		#ex10 {
+			width: 100%;
+			height: 150px;
+			/* bg shorthand: color src position/size repeat attachment */
+			background: yellow url("ex-8_images/pikachu.png") center/ 200px 200px no-repeat fixed;
+			}
+		
+	</style>
+</head>
+
+<body>
+<h1>This Is The Page Title</h1>
+<h3>HTML IMG Tag With Style Dimensions</h3>
+<p>This is a paragraph of text with a <strong>bold</strong> word in the middle of it. The image below is placed through the HTML IMG tag but uses an embedded style attribute to determine its width and height.</p>
+
+<img src="ex-8_images/water-sunset.png" alt="A Pretty Sunset" style="width:300px;height:300px;">
+
+<h3>CSS Background Shorthand</h3>
+<p>The CSS for the image below has all of the background properties in one background statement. <em>Something is on the other side - scroll down to see!</em></p>
+<div id="ex10"></div>
+<h3>Dimensioned Division With Background CSS and Background Color</h3>
+<p>The image below is placed as a background to a dimensioned DIV tag box. It has a background color determined by CSS and a partially transparent PNG image placed as a background image.</p>
+<div id="example1"></div>
+<h3>Background Image Layering - Bird & Cage</h3>
+<p>The three images below are: 1 a transparent background PNG of a cage, 2 a JPEG of a bird, 3 the cage and the bird on top of each other in the same background.</p>
+<div id="ex2"></div>
+<div id="ex3"></div>
+<div id="ex4"></div>
+<h3>Background Position</h3>
+<p>The three images below are all one image that is shown through an image width that is too small to show the whole thing. The image can be positioned inside of the window.</p>
+<div id="ex5"></div>
+<div id="ex5b"></div>
+<div id="ex5c"></div>
+<h3>Background Repeat</h3>
+<p>The default repeat is to tile both left & right and up & down. You can specify tiling off, or only left & right (the "x" direction), or only up & down (the "y" direction).</p>
+<div id="ex6"></div>
+<div id="ex7"></div>
+<div id="ex8"></div>
+<h3>Background Size</h3>
+<p>A background image can be its original size or shrink and grow to fill the background.</p>
+<div id="ex9"></div>
+
+
+</body>
+</html>

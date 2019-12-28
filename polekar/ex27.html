@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Protecting Images</title>
+<meta charset="UTF-8">
+<meta name="description" content="View of Kansas city from the common area of the National World War I museum in Kasas City, Missouri, United States.">
+<meta name="keywords" content="National World War I Museum; World War I; Museum; Kansas City; view; day time; KC; field">
+<meta name="author" content="Kishan Polekar">
+<!-- All images on this page ©2017 Kishan Polekar  -->
+<style>
+body { background: #2e2ee2; text-align: center;}
+section { width: 90%; height: 80%; margin: 0 auto; position: relative;}
+table { margin: 0 auto 100px auto; }
+footer { position: absolute; bottom: 0; background: black; color: white; width: 100%;}
+.shrinkwrap2 { width: 600px; height: 450px; overflow: hidden; margin: 0 auto;}
+</style>
+</head>
+<body>
+<section>
+<h2>Shrinkwrap Technique</h2>
+<p>Layered image with false, transparent GIF, image on top to capture the right click.<p>
+<img src="ex-27_images/world-war-museum.gif" style="background:url(ex-27_images/world-war-museum.jpg); width: 600px; height: 450px;" alt="kansas city view">
+
+<h2>Shrinkwrap Technique Advanced</h2>
+<p>Layered image with false, transparent corner and low resolution version, image on top to capture the right click.<p>
+<div class="shrinkwrap2">
+<img src="ex-27_images/hires-world-war-museum.gif"  style="background:url(ex-27_images/world-war-museum.jpg);" title="kansas city view" alt="kansas city view">
+</div>
+<h2>Sliced Image From Photoshop In Table</h2>
+<!-- Save for Web Slices (world-war-museum.jpg) -->
+<table id="Table_01" width="600" height="450" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/world-war-museum_01.jpg" width="301" height="450" alt="kansas city view 1"></td>
+		<td>
+			<img src="images/world-war-museum_02.jpg" width="299" height="450" alt="kansas city view 2"></td>
+	</tr>
+</table>
+<!-- End Save for Web Slices -->
+
+<footer>
+<p>All images &copy; 2017 Kishan Polekar</p>
+</footer>
+</section>
+</body>
+<html>

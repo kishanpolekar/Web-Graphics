@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body { background: #17408c;
+/* Complex radial gradient background alternative below */
+    background: -webkit-radial-gradient(50% 75%, closest-corner, #486db1, #17408c, #17408c); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(50% 75%, closest-corner, #486db1, #17408c, #17408c); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(50% 75%, closest-corner, #486db1, #17408c, #17408c); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(closest-corner at 50% 75%, #486db1, #17408c, #17408c); /* Standard syntax (must be last) */} /* #486db1 to #17408c Your darker color is the second one with lower values */
+section { position: relative; width: 800px; height: 700px; overflow: hidden; margin: 100px auto;}
+
+#tv { background: url("ex-18_images/tv-frame.png"); width: 800px; height: 532px; position: absolute;}
+iframe { position: absolute; top: 0px; left: -80px; }
+#frameclip { background: black url("ex-18_images/test-pattern.jpg"); width: 500px; height: 375px; overflow: hidden; position: absolute; left: 80px; top: 48px; border: 1px dotted yellow;} /* You could also do the old-test-pattern.jpg */
+</style>
+</head>
+<body>
+<section>
+
+        <div id="frameclip">
+		<!-- change iframe width="662" height="371" -->
+		<!-- Paste your YouTube embed code over the iframe below -->
+		<iframe width="662" height="371" src="https://www.youtube.com/embed/dP9Wp6QVbsk?autoplay=1&loop=1&showinfo=0&controls=0&rel=0&iv_load_policy=3&playlist=dP9Wp6QVbsk" frameborder="0" ></iframe>
+		<!-- Options to add:
+		loop=, autoplay=, showinfo=, controls=, rel=, iv_load_policy=, playlist=, start=, end= -->
+        </div>
+        <div id="tv"></div>
+
+</section>
+</body>
+<html>

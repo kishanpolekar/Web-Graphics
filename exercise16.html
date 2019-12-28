@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.catbox {
+	background: url("ex-16_images/cat.jpg");
+	width: 300px; height: 259px; float: left;
+	border: 1px dotted black;
+    position: relative; left: 0px;
+	}
+.catbox span {
+	font: 30px sans-serif;
+	display: inline-block; margin: 15px;
+	}
+#cat1:hover {background-position: right; transition: 2s;}
+#cat2:hover {background: url("ex-16_images/hat.png"), url("ex-16_images/cat.jpg");}
+#cat3:hover {background: url("ex-16_images/rat.jpg");}
+#cat4:hover {background: none;}
+#cat5:hover {-webkit-filter: invert(); filter: invert(); transition: 2s;}
+#cat6:hover {left: 100px; transition: 2s;}
+</style>
+</head>
+
+<body>
+<div id="cat1" class="catbox"><span>cat 1 - change bg-position</span></div>
+<div id="cat2" class="catbox"><span>cat 2 - add 2nd image</span></div>
+<div id="cat3" class="catbox"><span>cat 3 - replace image</span></div>
+<div id="cat4" class="catbox"><span>cat 4 - bg-none</span></div>
+<div id="cat5" class="catbox"><span>cat 5 - filter</span></div>
+<div id="cat6" class="catbox"><span>cat 7 - rel-position</span></div>
+</body>
+</html>

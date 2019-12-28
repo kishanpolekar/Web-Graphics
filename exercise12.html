@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color</title>
+<style>
+section {padding: 15px;}
+.crayonbox {border: 10px solid transparent; border-width: 0px 60px 100px 60px; border-bottom-color: gray; width: 0px; height: 0px; float: left;outline: black dashed thin;}
+.colorbox {border: 1px solid black; width: 100px; height: 100px; margin: 10px; float: left;}
+.hexbox {border: 1px dotted black; width: 100px; height: 100px; border-radius: 50px; margin: 10px; float: left;}
+span {display: inline-block; padding: 5px; background: black; color: white;}
+h2, h1, h3, p, .clear-all {clear: both;}
+
+/* NAMED COLORS red */
+#redname {border-bottom-color: red;}
+#greenname {border-bottom-color: green;}
+#bluename {border-bottom-color: blue;}
+#yellowname {border-bottom-color: yellow;}
+#magentaname {border-bottom-color: fuchsia;}
+#cyanname {border-bottom-color: cyan;}
+#whitename {border-bottom-color: white;}
+#blackname {border-bottom-color: black;}
+#grayname {border-bottom-color: gray;}
+/* MY COLOR NAMES - Use Color Name Chart */
+#favename {border-bottom-color: dodgerblue;}
+#weirdname {border-bottom-color: bisque;}
+#ediblename {border-bottom-color: tomato;}
+
+/* RGB COLOR rgb(0,0,0) */
+#redbox 	{background: rgb(255,0,0);}
+#greenbox 	{background: rgb(0,255,0);}
+#bluebox 	{background: rgb(0,0,255);}
+#yellowbox 	{background: rgb(255,255,0);}
+#magentabox 	{background: rgb(255,0,255);}
+#cyanbox 	{background: rgb(0,255,255);}
+#whitebox 	{background: rgb(255,255,255);}	
+#blackbox 	{background: rgb(0,0,0);}	
+#graybox 	{background: rgb(128,128,128);}	
+/* CUSTOM RGB MIXES - Use Photoshop */
+#low-sat-lt-red {background: rgb(248,190,190);}
+#gold {background: rgb(218,192,86);}
+#lt-blue-gray {background: rgb(191,216,216);}
+#dk-green {background: rgb(43,86,53);}
+#mid-sat-dk-purple {background: rgb(77,48,96);}
+#brown {background: rgb(139,95,25);}
+
+/* Hexadecimal Color #000000 or #000 */
+#hexred {background: #f00;}
+#hexgreen {background: #0f0;}
+#hexblue {background: #00f;}
+#hexyellow {background: #ff0;}
+#hexmagenta {background: #f0f;}
+#hexcyan {background: #0ff;}
+#hexwhite {background: #fff;}
+#hexblack {background: #000;}
+#hexgray {background: #777;}
+/* Creative Colors - Use Photoshop */
+#hexgross {background: #828820;}
+#hexpretty {background: #00eaff;}
+#hexdope {background: #00ffba;}
+#hexangry {background: #c12929;}
+#hexcalm {background: #91f1ff;}
+#hexwild {background: #bb0a6e;}
+
+/* Section Colors - Make sure that there is legible contrast! 
+Use whichever color method you would like */
+#crayon-section {background: blanchedalmond; color: black;}
+#rgb-section  {background: rgb(247,213,57); color: rgb(66,132,2);}
+#hexa-section {background: #0069c2; color: #ff7200;}
+</style>
+</head>
+<body>
+
+<section id="crayon-section">
+<h2>Color Names</h2>
+<p>There are 17 official color names and many additional traditional names, some of them very strange, for quick color reference. These can be helpful for quick things like the pure colors but are very limited.</p><p><em>These triangles are just a super thick bottom border with a dashed outline. We are assigning only the bottom border color and leaving the other 3 transparent.</em></p>
+<div class="crayonbox" id="redname"><span>red</span></div>
+<div class="crayonbox" id="greenname"><span>green</span></div>
+<div class="crayonbox" id="bluename"><span>blue</span></div>
+<div class="crayonbox" id="yellowname"><span>yellow</span></div>
+<div class="crayonbox" id="magentaname"><span>magenta</span></div>
+<div class="crayonbox" id="cyanname"><span>cyan</span></div>
+<div class="crayonbox" id="whitename"><span>white</span></div>
+<div class="crayonbox" id="blackname"><span>black</span></div>
+<div class="crayonbox" id="grayname"><span>gray</span></div>
+<!-- YOUR COLORS FOLLOW -->
+<div class="crayonbox" id="favename"><span>favorite name</span></div>
+<div class="crayonbox" id="weirdname"><span>weird name</span></div>
+<div class="crayonbox" id="ediblename"><span>edible name</span></div>
+<div class="clear-all"></div>
+</section>
+
+<section id="rgb-section">
+<h2>RGB Color</h2>
+<p>Color can be expressed numerically by using a value "0-255" for each of the three channels: red, green, and blue.</p><p><em>Each division is a simple square and has a solid black border</em></p>
+<div class="colorbox" id="redbox"><span>red</span></div>
+<div class="colorbox" id="greenbox"><span>green</span></div>
+<div class="colorbox" id="bluebox"><span>blue</span></div>
+<div class="colorbox" id="yellowbox"><span>yellow</span></div>
+<div class="colorbox" id="magentabox"><span>magenta</span></div>
+<div class="colorbox" id="cyanbox"><span>cyan</span></div>
+<div class="colorbox" id="whitebox"><span>white</span></div>
+<div class="colorbox" id="blackbox"><span>black</span></div>
+<div class="colorbox" id="graybox"><span>gray</span></div>
+<!-- CUSTOM COLORS FOLLOW -->
+<div class="colorbox" id="low-sat-lt-red"><span>low saturation light red</span></div>
+<div class="colorbox" id="gold"><span>gold</span></div>
+<div class="colorbox" id="lt-blue-gray"><span>light blue-gray</span></div>
+<div class="colorbox" id="dk-green"><span>dark green</span></div>
+<div class="colorbox" id="mid-sat-dk-purple"><span>mid saturation dark purple</span></div>
+<div class="colorbox" id="brown"><span>brown</span></div>
+<div class="clear-all"></div>
+</section>
+
+<section id="hexa-section">
+<h2>Hexadecimal Color</h2>
+<p>The numbers for RGB color can be expressed with a simplified number and letter system that uses "0-9" and "a-f", preceded by a "#" to communicate the color with just 3 sets of two digits each.</p><p><em>Each division uses "border-radius" to make it look like a circle.</em></p>
+<div class="hexbox" id="hexred"><span>red</span></div>
+<div class="hexbox" id="hexgreen"><span>green</span></div>
+<div class="hexbox" id="hexblue"><span>blue</span></div>
+<div class="hexbox" id="hexyellow"><span>yellow</span></div>
+<div class="hexbox" id="hexmagenta"><span>magenta</span></div>
+<div class="hexbox" id="hexcyan"><span>cyan</span></div>
+<div class="hexbox" id="hexwhite"><span>white</span></div>
+<div class="hexbox" id="hexblack"><span>black</span></div>
+<div class="hexbox" id="hexgray"><span>gray</span></div>
+<!-- YOUR COLORS FOLLOW -->
+<div class="hexbox" id="hexgross"><span>gross</span></div>
+<div class="hexbox" id="hexpretty"><span>pretty</span></div>
+<div class="hexbox" id="hexdope"><span>dope</span></div>
+<div class="hexbox" id="hexangry"><span>angry</span></div>
+<div class="hexbox" id="hexcalm"><span>calm</span></div>
+<div class="hexbox" id="hexwild"><span>wild</span></div>
+<div class="clear-all"></div>
+</section>
+
+</body>
+</html>

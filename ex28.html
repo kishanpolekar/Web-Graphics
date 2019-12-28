@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>De-Dancing-Bug</title>
+<style>
+body { margin: 0;}
+.curtain { background: url("http://grin3design.com/art1620/bug/images/curtain.png"), url("http://grin3design.com/art1620/bug/images/vignette.jpg") left/cover;
+	width: 100%; height: 900px;
+	background-color: #599d8d;}
+.floor { background: url("http://grin3design.com/art1620/bug/images/floor.jpg"), url("http://grin3design.com/art1620/bug/images/vignette.jpg") left/cover;
+	width: 100%; height: 30%;
+	position: absolute; bottom: 0; opacity: 0.75}
+#hat { background: url("http://grin3design.com/art1620/bug/images/hat.png");
+	width: 185px; height: 174px;
+	position: absolute; left: 50%; bottom: 45%; background-position: right;}
+#cane { background: url("http://grin3design.com/art1620/bug/images/cane.png");
+	width: 204px; height: 268px;
+	position: absolute; left: 25%; bottom: 20%;}
+#shadow { background: url("http://grin3design.com/art1620/bug/images/Shadow.png");
+	width: 317px; height: 140px; opacity: 0.75;
+	position: absolute; bottom: 13%; left: 30%;}
+img { position: absolute; bottom: 15%; left: 30%; }
+.overlay {background-blend-mode: overlay;}
+</style>
+</head>
+<body>
+<div class="curtain overlay"></div>
+<div class="floor overlay"></div>
+<div id="shadow"></div>
+<div id="cane"></div>
+<img src="http://grin3design.com/art1620/bug/images/bug.gif" alt="a beetle">
+<div id="hat"></div>
+</body>
+<html>
